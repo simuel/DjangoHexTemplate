@@ -1,0 +1,23 @@
+name: Compress Project
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  compress:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Compress project
+        run: zip -r project.zip .
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: compressed-project
+          path: project.zip
