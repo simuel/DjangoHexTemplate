@@ -24,10 +24,13 @@ jobs:
         # Comprimir los archivos modificados en un archivo zip
         git diff --name-only ${{ github.event.before }} ${{ github.sha }} | \
         grep -v '^\.github' | \
-        xargs -I {} cp --parents {} compressed_files/
+        while read file; do
+          # Copiar cada archivo modificado al directorio temporal
+          cp --parents "$file" compressed_files/
+        done
         
         # Crear el archivo zip
-        zip -r compressed_files.zip compressed_files
+        zip -r DjangoHexTemplate.zip compressed_files
 
     - name: Subir el archivo comprimido como artefacto
       uses: actions/upload-artifact@v3
