@@ -1,23 +1,38 @@
-name: Compress Project
+name: Comprimir Archivos en Main
 
 on:
   push:
     branches:
       - main
+  pull_request:
+    branches:
+      - main
 
 jobs:
-  compress:
+  compress_files:
     runs-on: ubuntu-latest
-
+    
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
+    - name: Checkout del código
+      uses: actions/checkout@v3
 
-      - name: Compress project
-        run: zip -r project.zip .
+    - name: Comprimir archivos cambiados
+      run: |
+        # Crear un directorio temporal para los archivos comprimidos
+        mkdir compressed_files
+        
+        # Comprimir los archivos modificados en un archivo zip
+        git diff --name-only ${{ github.event.before }} ${{ github.sha }} | \
+        grep -v '^\.github' | \
+        xargs -I {} cp --parents {} compressed_files/
+        
+        # Crear el archivo zip
+        zip -r compressed_files.zip compressed_files
 
-      - name: Upload artifact
-        uses: actions/upload-artifact@v2
-        with:
-          name: compressed-project
-          path: project.zip
+    - name: Subir el archivo comprimido como artefacto
+      uses: actions/upload-artifact@v3
+      with:
+        name: archivo-comprimido
+        path: DjangoHexTemplate.zip
+
+
