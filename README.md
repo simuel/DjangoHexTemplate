@@ -19,8 +19,6 @@ DjangoHexTemplate/
 |   |-- infrastructure/         # Infrastructure details (DB, serializers)
 |   |-- presentation/           # User interface and API endpoints
 |   |-- tests/                  # Unit and integration tests
-|-- manage.py                   # Django's management script
-|-- requirements.txt            # Project dependencies
 |-- README.md                   # Project documentation
 ```
 ## Prerequisites
