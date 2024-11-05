@@ -1,5 +1,3 @@
-# DjangoHexTemplate
-
 **DjangoHexTemplate** is a robust and scalable template for building Django applications using **Hexagonal Architecture** or **Clean Architecture** principles. This project structure encourages a separation of concerns, keeping your business logic independent from the framework and infrastructure details, thus promoting maintainability, testability, and adaptability over time.
 
 ## Features
@@ -13,7 +11,6 @@
 ## Project Structure
 
 Here's a breakdown of the project's main directories and their purpose:
-
 ```plaintext
 DjangoHexTemplate/
 |-- app_name/                   # Main directory for the application
@@ -31,7 +28,6 @@ DjangoHexTemplate/
 - **Django 4.0+**: The project is built on Django 4.0 or later.
 
 ## How to Set Up and Migrate the Application
-
 Follow these steps to get your application running:
 
 1. **Install Django:**
