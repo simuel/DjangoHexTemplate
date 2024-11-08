@@ -1,6 +1,6 @@
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
-from .views import CustomerViewSet
+from .views import {{app_name.capitalize}}ViewSet
 
 # Configuración del router para usar con DRF
 router = DefaultRouter()
