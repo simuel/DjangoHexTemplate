@@ -1,4 +1,4 @@
-import Apps.{{app_name}}.domain.services.{{app_name}}_service import {{app_name.capitalize}}Service
+from Apps.{{app_name}}.domain.services.{{app_name}}_service import {{app_name.capitalize}}Service
 
 class Manage{{app_name.capitalize}}:
     """
