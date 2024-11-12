@@ -48,11 +48,11 @@ Follow these steps to get your application running:
     ```sh
     cd apps
     ```
-4. **Clone the DjangoHexTemplate repository:**
+6. **Clone the DjangoHexTemplate repository:**
     ```
     git clone https://github.com/simuel/DjangoHexTemplate.git
     ```
-5. **Create a new app using the template:**
+7. **Create a new app using the template:**
     ```
     django-admin startapp --template=DjangoHexTemplate name_app
     ```
