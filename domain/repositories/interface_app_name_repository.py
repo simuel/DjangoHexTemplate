@@ -1,5 +1,5 @@
 from abc import ABC, abstractmethod
-from Apps.{{app_name}}.domain.entities.{{app_name}} import {{app_name.capitalize}}
+from apps.{{app_name}}.domain.entities.{{app_name}} import {{app_name.capitalize}}
 
 class I{{app_name.capitalize}}Repository(ABC):
     

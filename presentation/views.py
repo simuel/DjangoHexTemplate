@@ -3,11 +3,11 @@
 from rest_framework import viewsets
 from rest_framework.response import Response
 from rest_framework import status
-from Apps.{{app_name}}.infrastructure.serializers.{{app_name}}_serializer import {{app_name.capitalize}}Serializer
-from Apps.{{app_name}}.domain.services.{{app_name}}_service import {{app_name.capitalize}}Service
-from Apps.{{app_name}}.infrastructure.repositories.{{app_name}}_repository_django import {{app_name.capitalize}}RepositoryDjango
-from Apps.{{app_name}}.application.use_cases.manage_{{app_name}} import Manage{{app_name.capitalize}}
-from Apps.{{app_name}}.domain.entities.{{app_name}} import {{app_name.capitalize}}
+from apps.{{app_name}}.infrastructure.serializers.{{app_name}}_serializer import {{app_name.capitalize}}Serializer
+from apps.{{app_name}}.domain.services.{{app_name}}_service import {{app_name.capitalize}}Service
+from apps.{{app_name}}.infrastructure.repositories.{{app_name}}_repository_django import {{app_name.capitalize}}RepositoryDjango
+from apps.{{app_name}}.application.use_cases.manage_{{app_name}} import Manage{{app_name.capitalize}}
+from apps.{{app_name}}.domain.entities.{{app_name}} import {{app_name.capitalize}}
 
 class {{app_name.capitalize}}ViewSet(viewsets.ViewSet):
     """

@@ -1,8 +1,8 @@
 
-from Apps.{{app_name}}.domain.entities.{{app_name}} import {{app_name.capitalize}}
-from Apps.{{app_name}}.domain.value_objects import *
-from Apps.{{app_name}}.domain.repositories.interface_{{app_name}}_repository import I{{app_name.capitalize}}Repository
-from Apps.{{app_name}}.models import {{app_name.capitalize}}Model  # Importando el modelo de Django
+from apps.{{app_name}}.domain.entities.{{app_name}} import {{app_name.capitalize}}
+from apps.{{app_name}}.domain.value_objects import *
+from apps.{{app_name}}.domain.repositories.interface_{{app_name}}_repository import I{{app_name.capitalize}}Repository
+from apps.{{app_name}}.models import {{app_name.capitalize}}Model  # Importando el modelo de Django
 
 
 class {{app_name.capitalize}}RepositoryDjango(I{{app_name.capitalize}}Repository):
