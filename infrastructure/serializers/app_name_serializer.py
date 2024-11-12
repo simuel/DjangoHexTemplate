@@ -1,7 +1,7 @@
 
 from rest_framework import serializers
-from Apps.{{app_name}}.domain.value_objects import *
-from Apps.{{app_name}}.domain.entities.{{app_name}} import {{app_name.capitalize}}
+from apps.{{app_name}}.domain.value_objects import *
+from apps.{{app_name}}.domain.entities.{{app_name}} import {{app_name.capitalize}}
 
 class {{app_name.capitalize}}Serializer(serializers.Serializer):
     id = serializers.UUIDField(read_only=True)
