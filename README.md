@@ -40,6 +40,14 @@ Follow these steps to get your application running:
     ```sh
     cd name_proyect
     ```
+4. **Create a new directory**
+    ```sh
+    mkdir apps
+    ```
+5. **Navigate to the apps directory:**
+    ```sh
+    cd apps
+    ```
 4. **Clone the DjangoHexTemplate repository:**
     ```
     git clone https://github.com/simuel/DjangoHexTemplate.git
